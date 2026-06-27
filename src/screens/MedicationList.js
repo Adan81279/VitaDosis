@@ -156,7 +156,7 @@ export default function MedicationList({ medications, onDeleteMedication, onMark
             onPress={() => onMarkAsTaken(item.id)}
             activeOpacity={0.8}
           >
-            <MaterialCommunityIcons name="checkbox-marked-circle" size={12} color="#FFFFFF" />
+            <MaterialCommunityIcons name="checkbox-marked-circle" size={12} color="#C2185B" />
             <Text style={styles.checkText}>Tomar</Text>
           </TouchableOpacity>
         </View>
@@ -237,7 +237,7 @@ export default function MedicationList({ medications, onDeleteMedication, onMark
                       <MaterialCommunityIcons 
                         name={c.icon} 
                         size={10} 
-                        color={isSelected ? '#FFFFFF' : '#2A9D8F'} 
+                        color={isSelected ? '#C2185B' : '#2A9D8F'} 
                       />
                       <Text style={[styles.classifBtnText, isSelected && styles.classifBtnTextSelected]}>
                         {c.name}
@@ -251,11 +251,11 @@ export default function MedicationList({ medications, onDeleteMedication, onMark
               <Text style={styles.modalLabel}>Frecuencia (Horas)</Text>
               <View style={styles.modalCounterRow}>
                 <TouchableOpacity style={styles.modalCounterBtn} onPress={() => adjustEditFrequency(-1)}>
-                  <MaterialCommunityIcons name="minus" size={14} color="#FFFFFF" />
+                  <MaterialCommunityIcons name="minus" size={14} color="#C2185B" />
                 </TouchableOpacity>
                 <Text style={styles.modalCounterText}>Cada <Text style={styles.boldNum}>{editFrequency}</Text> hrs</Text>
                 <TouchableOpacity style={styles.modalCounterBtn} onPress={() => adjustEditFrequency(1)}>
-                  <MaterialCommunityIcons name="plus" size={14} color="#FFFFFF" />
+                  <MaterialCommunityIcons name="plus" size={14} color="#C2185B" />
                 </TouchableOpacity>
               </View>
 
@@ -263,11 +263,11 @@ export default function MedicationList({ medications, onDeleteMedication, onMark
               <Text style={styles.modalLabel}>Duración (Días)</Text>
               <View style={styles.modalCounterRow}>
                 <TouchableOpacity style={styles.modalCounterBtn} onPress={() => adjustEditDuration(-1)}>
-                  <MaterialCommunityIcons name="minus" size={14} color="#FFFFFF" />
+                  <MaterialCommunityIcons name="minus" size={14} color="#C2185B" />
                 </TouchableOpacity>
                 <Text style={styles.modalCounterText}>Por <Text style={styles.boldNum}>{editDuration}</Text> días</Text>
                 <TouchableOpacity style={styles.modalCounterBtn} onPress={() => adjustEditDuration(1)}>
-                  <MaterialCommunityIcons name="plus" size={14} color="#FFFFFF" />
+                  <MaterialCommunityIcons name="plus" size={14} color="#C2185B" />
                 </TouchableOpacity>
               </View>
 
@@ -425,7 +425,7 @@ const styles = StyleSheet.create({
   },
   checkButton: {
     height: 28,
-    backgroundColor: '#2A9D8F',
+    backgroundColor: '#F8BBD0',
     borderRadius: 14,
     flexDirection: 'row',
     alignItems: 'center',
@@ -433,7 +433,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 12,
   },
   checkText: {
-    color: '#FFFFFF',
+    color: '#C2185B',
     fontSize: 10,
     fontWeight: 'bold',
     marginLeft: 3,
@@ -523,8 +523,8 @@ const styles = StyleSheet.create({
     borderColor: '#C8E6C9',
   },
   classifBtnSelected: {
-    backgroundColor: '#2A9D8F',
-    borderColor: '#2A9D8F',
+    backgroundColor: '#F8BBD0',
+    borderColor: '#F8BBD0',
   },
   classifBtnText: {
     fontSize: 9,
@@ -533,7 +533,7 @@ const styles = StyleSheet.create({
     marginLeft: 3,
   },
   classifBtnTextSelected: {
-    color: '#FFFFFF',
+    color: '#C2185B',
   },
   modalCounterRow: {
     flexDirection: 'row',
@@ -551,7 +551,7 @@ const styles = StyleSheet.create({
     width: 24,
     height: 24,
     borderRadius: 12,
-    backgroundColor: '#2A9D8F',
+    backgroundColor: '#F8BBD0',
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -603,10 +603,10 @@ const styles = StyleSheet.create({
     fontSize: 11,
   },
   modalBtnSave: {
-    backgroundColor: '#2A9D8F',
+    backgroundColor: '#F8BBD0',
   },
   modalBtnSaveText: {
-    color: '#FFFFFF',
+    color: '#C2185B',
     fontWeight: 'bold',
     fontSize: 11,
   },

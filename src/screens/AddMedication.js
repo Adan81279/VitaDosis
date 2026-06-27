@@ -150,7 +150,7 @@ export default function AddMedication({ medications, onAddMedication, isWatchMod
                   <MaterialCommunityIcons 
                     name={item.icon} 
                     size={isWatchMode ? 14 : 16} 
-                    color={isSelected ? '#FFFFFF' : '#2A9D8F'} 
+                    color={isSelected ? '#C2185B' : '#2A9D8F'} 
                   />
                   <Text style={[
                     styles.classifText,
@@ -172,7 +172,7 @@ export default function AddMedication({ medications, onAddMedication, isWatchMod
             style={[styles.counterBtn, isWatchMode && styles.counterBtnWatch]} 
             onPress={() => adjustFrequency(-1)}
           >
-            <MaterialCommunityIcons name="minus" size={16} color="#FFFFFF" />
+            <MaterialCommunityIcons name="minus" size={16} color="#C2185B" />
           </TouchableOpacity>
           <Text style={[styles.counterText, isWatchMode && styles.counterTextWatch]}>
             Cada <Text style={styles.boldNum}>{frequency}</Text> hrs
@@ -181,7 +181,7 @@ export default function AddMedication({ medications, onAddMedication, isWatchMod
             style={[styles.counterBtn, isWatchMode && styles.counterBtnWatch]} 
             onPress={() => adjustFrequency(1)}
           >
-            <MaterialCommunityIcons name="plus" size={16} color="#FFFFFF" />
+            <MaterialCommunityIcons name="plus" size={16} color="#C2185B" />
           </TouchableOpacity>
         </View>
 
@@ -192,7 +192,7 @@ export default function AddMedication({ medications, onAddMedication, isWatchMod
             style={[styles.counterBtn, isWatchMode && styles.counterBtnWatch]} 
             onPress={() => adjustDuration(-1)}
           >
-            <MaterialCommunityIcons name="minus" size={16} color="#FFFFFF" />
+            <MaterialCommunityIcons name="minus" size={16} color="#C2185B" />
           </TouchableOpacity>
           <Text style={[styles.counterText, isWatchMode && styles.counterTextWatch]}>
             Por <Text style={styles.boldNum}>{duration}</Text> días
@@ -201,7 +201,7 @@ export default function AddMedication({ medications, onAddMedication, isWatchMod
             style={[styles.counterBtn, isWatchMode && styles.counterBtnWatch]} 
             onPress={() => adjustDuration(1)}
           >
-            <MaterialCommunityIcons name="plus" size={16} color="#FFFFFF" />
+            <MaterialCommunityIcons name="plus" size={16} color="#C2185B" />
           </TouchableOpacity>
         </View>
 
@@ -224,7 +224,7 @@ export default function AddMedication({ medications, onAddMedication, isWatchMod
           onPress={handleSave}
           activeOpacity={0.8}
         >
-          <MaterialCommunityIcons name="content-save" size={18} color="#FFFFFF" />
+          <MaterialCommunityIcons name="content-save" size={18} color="#C2185B" />
           <Text style={styles.saveBtnText}>Guardar</Text>
         </TouchableOpacity>
       </View>
@@ -324,8 +324,8 @@ const styles = StyleSheet.create({
     borderRadius: 10,
   },
   classifBtnSelected: {
-    backgroundColor: '#2A9D8F',
-    borderColor: '#2A9D8F',
+    backgroundColor: '#F8BBD0',
+    borderColor: '#F8BBD0',
   },
   classifText: {
     fontSize: 10,
@@ -338,7 +338,7 @@ const styles = StyleSheet.create({
     marginLeft: 2,
   },
   classifTextSelected: {
-    color: '#FFFFFF',
+    color: '#C2185B',
   },
   counterRow: {
     flexDirection: 'row',
@@ -360,7 +360,7 @@ const styles = StyleSheet.create({
     width: 28,
     height: 28,
     borderRadius: 14,
-    backgroundColor: '#2A9D8F',
+    backgroundColor: '#F8BBD0',
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -415,7 +415,7 @@ const styles = StyleSheet.create({
   saveButton: {
     width: '100%',
     height: 40,
-    backgroundColor: '#2A9D8F',
+    backgroundColor: '#F8BBD0',
     borderRadius: 20,
     flexDirection: 'row',
     alignItems: 'center',
@@ -431,7 +431,7 @@ const styles = StyleSheet.create({
     borderRadius: 17,
   },
   saveBtnText: {
-    color: '#FFFFFF',
+    color: '#C2185B',
     fontWeight: 'bold',
     fontSize: 12,
     marginLeft: 6,

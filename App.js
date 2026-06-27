@@ -198,7 +198,7 @@ export default function App() {
             <MaterialCommunityIcons 
               name="calendar-clock" 
               size={20} 
-              color={activeTab === 'dashboard' ? '#FFFFFF' : '#7F8C8D'} 
+              color={activeTab === 'dashboard' ? '#C2185B' : '#7F8C8D'} 
             />
           </TouchableOpacity>
 
@@ -209,7 +209,7 @@ export default function App() {
             <MaterialCommunityIcons 
               name="pill" 
               size={20} 
-              color={activeTab === 'list' ? '#FFFFFF' : '#7F8C8D'} 
+              color={activeTab === 'list' ? '#C2185B' : '#7F8C8D'} 
             />
           </TouchableOpacity>
 
@@ -220,7 +220,7 @@ export default function App() {
             <MaterialCommunityIcons 
               name="plus-circle" 
               size={20} 
-              color={activeTab === 'add' ? '#FFFFFF' : '#7F8C8D'} 
+              color={activeTab === 'add' ? '#C2185B' : '#7F8C8D'} 
             />
           </TouchableOpacity>
 
@@ -231,7 +231,7 @@ export default function App() {
             <MaterialCommunityIcons 
               name="history" 
               size={20} 
-              color={activeTab === 'history' ? '#FFFFFF' : '#7F8C8D'} 
+              color={activeTab === 'history' ? '#C2185B' : '#7F8C8D'} 
             />
           </TouchableOpacity>
         </View>
@@ -284,6 +284,6 @@ const styles = StyleSheet.create({
     borderRadius: 15,
   },
   activeTabItem: {
-    backgroundColor: '#2A9D8F',
+    backgroundColor: '#F8BBD0',
   },
 });

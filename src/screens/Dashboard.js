@@ -124,14 +124,22 @@ export default function Dashboard({ medications, history, onMarkAsTaken, onNavig
             <TouchableOpacity 
               style={[
                 styles.actionBtn, 
-                { backgroundColor: nextDoseInfo.isOverdue ? '#E76F51' : '#2A9D8F' },
+                { backgroundColor: nextDoseInfo.isOverdue ? '#FFCDD2' : '#F8BBD0' },
                 isWatchMode && styles.actionBtnWatch
               ]}
               onPress={() => onMarkAsTaken(nextDoseInfo.medication.id)}
               activeOpacity={0.8}
             >
-              <MaterialCommunityIcons name="check-bold" size={isWatchMode ? 16 : 20} color="#FFFFFF" />
-              <Text style={[styles.actionBtnText, isWatchMode && styles.actionBtnTextWatch]}>Tomar Dosis</Text>
+              <MaterialCommunityIcons 
+                name="check-bold" 
+                size={isWatchMode ? 16 : 20} 
+                color={nextDoseInfo.isOverdue ? '#B71C1C' : '#C2185B'} 
+              />
+              <Text style={[
+                styles.actionBtnText, 
+                { color: nextDoseInfo.isOverdue ? '#B71C1C' : '#C2185B' },
+                isWatchMode && styles.actionBtnTextWatch
+              ]}>Tomar Dosis</Text>
             </TouchableOpacity>
           </View>
         ) : (
@@ -337,7 +345,6 @@ const styles = StyleSheet.create({
     borderRadius: 16,
   },
   actionBtnText: {
-    color: '#FFFFFF',
     fontWeight: 'bold',
     fontSize: 13,
     marginLeft: 4,
@@ -366,13 +373,13 @@ const styles = StyleSheet.create({
     marginBottom: 8,
   },
   addBtn: {
-    backgroundColor: '#2A9D8F',
+    backgroundColor: '#F8BBD0',
     paddingVertical: 6,
     paddingHorizontal: 12,
     borderRadius: 15,
   },
   addBtnText: {
-    color: '#FFFFFF',
+    color: '#C2185B',
     fontSize: 10,
     fontWeight: 'bold',
   },
